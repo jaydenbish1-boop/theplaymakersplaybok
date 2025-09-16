@@ -1,0 +1,240 @@
+h1{                               
+    text-align: center;           /*This aligns all h1 text to the centre of the page*/  
+    font-size: 65px;              /*This makes the size of the font to 65 pixels*/
+}
+
+h2{
+    color: white;               /*This makes the colour of the h2 text white*/
+    background-color: black;    /*This makes the clour of the background of the text black*/
+    width: 100%;                  /*Makes the texts width go across the whole page*/
+    margin: 0;                    /*Removes all margins around the text*/
+    text-align: center;           /*This aligns all of the h2 text to the centre of the page*/
+}
+
+h3{
+    color:black;                /*Makes the text black*/
+    font-size:70px;               /*Makes the size of the text 70 pixels big*/
+}
+
+p{
+    text-align:left;              /*This aligns all of the p text to the left of the page*/
+    color: black;               /*This changes the colour of the p text to black*/
+    margin-top: 90px;             /*Makes the top margin 90 pixels big*/
+    margin-left:200px;            /*Makes the left margin 200 pixels wide*/
+    margin-right:200px;           /*Makes the right margin 200 pixels wide*/
+    margin-bottom: 25px;          /*Makes the bottom margin 25 pixels*/
+    font-size: 28px;              /*Makes the font size 28 pixels*/
+    line-height: 50px;            /*Makes the height of the gaps bewtween the text 50 pixels*/
+}
+
+a{
+    font-size: 100px;                           /*Makes the font size 100px*/
+    text-align: center;                         /*Aligns the text to the center of the page*/
+    text-decoration: none;                      /*Makes it so theres no text decoration nothing*/
+    color: white;                             /*Makes the colur of the links to white*/
+}
+
+a:hover{
+    transform: scale(1.1);        /*When the mouse hovers of the image the it gets bigger*/
+}
+
+.tablesizehtp{
+    border-collapse: collapse;    /*makes it so the table lines are single not double*/
+    width: 150px;                 /*Makes the width of the table 150 pixels wide*/
+    table-layout: fixed;          /*Makes all the table collomns stay equal width*/
+    background-color: black;    /*Makes the background of the table black*/
+}
+
+
+.tablesizehtp table{
+    border-collapse: collapse;    /*Makes its so the table lines are single not double*/
+    width: 100%;                  /*Makes it so the width of the table spans across the whole section*/
+
+}
+
+.tablesizehtp td {
+    border: 2px solid darkorange;    /*Makes the border 2 pixels wide, a solid line and dark orange colour */
+    text-align: center;                /*Aligns the text in the table to the center of its box*/
+    padding: 20px;                     /*Adds 20 pixels of padding in each box*/
+    background-color: darkorange;    /*Makes the background of the table black*/
+}
+
+.tablesizehtp a{
+    font-size: 15px;                          /*Makes the size of the links to 15 pixels*/
+    background-color: black;                /*Makes the background of the links to black*/
+    border-radius: 100px;                     /*Makes the corners of the boxes rounded*/
+    padding: 10px;                            /*Adds 10 pixels of padding around the text*/ 
+    display: inline-block;                    /*Makes it so the table can sit next to text, but I can still change the width and height*/
+    color: white;                           /*Makes the text white*/
+    text-decoration: none;                    /*Removes any text decoration*/
+    width: 100%;
+}
+
+
+.site-header{
+    position: relative;                 /*This positions the header normally but I can move it a little bit using top,bottom,left,right*/
+    top: 0;                             /*Make sure there is no gap between the header and the top of the page */
+    background-color: darkorange;     /*Makes the background colour black*/
+    z-index: 1000;                      /*This makes sure that if two things are overlapping, the one with the bigger z-index it goes in front*/
+    width: 100%;                        /*Makes the width of the header also maxed out*/
+    padding: 10px 0;                    /*Gives 10 pixels of padding on the top and bottom, but no padding on the left and right*/
+}
+
+.site-header h1 {
+    text-align: center;                /*Makes the text centered*/
+    font-size: 65px;                   /*Changes the font size to 65 pixels big*/
+    color: rgb(52, 48, 38);          /*Makes the text white*/
+    margin: 0;                         /*Removes any margins around the text*/
+    padding: 2px 0;                    /*Gives 2 pixels of padding to the top and bottom, but none to the left and right*/
+    position: relative;                /*This positions the header normally but I can move it a little bit using top,bottom,left,right*/
+    background-color: darkorange;    /*This makes the backround of the text dark oragne*/
+
+}
+
+.site-header .tablesizehtp {
+    margin: 0;                      /*Removes any margins around the text*/
+}
+
+.site-header .tablesizehtp table {
+    border-collapse: collapse;      /*Makes the lines of the table single not double lines*/
+    width: 150px;                   /*Makes the width 150 pixels*/
+    table-layout: fixed;            /*Makes all the table collomns stay equal width*/
+}
+
+html, body {
+    margin: 0;                      /*Removes any margins*/
+    padding: 0;                     /*Remives any padding*/
+}
+
+.page-title{
+    text-align: center;                 /*Centers the text*/
+    font-size: 65px;                    /*Makes the text sixe to 65 pixels*/
+    color: white;                     /*Changes the colour to white*/
+    background-color: darkorange;     /*Makes the background colour white*/
+    margin: 0;                          /*Removes any margins*/
+    padding: 10px 0;                    /*Adds 10 pixels of padding to the top and bottom but no padding to the left and right*/
+
+}
+
+.sidebar{
+    position: fixed;                            /*This keeps the sidebar on the screen even when you scroll*/
+    top: 0;                                     /*Make sure there is no gap between the sidebar and the top of the page*/
+    left: 0;                                    /*Make sure there is no gap between the sidebar and the leftside of the page*/
+    width: 180px;                               /*Makes the width 180 pixels*/
+    height: 100vh;                              /*Makes the sidebars height span the whlole screen*/
+    background-color: darkorange;             /*Makes the background colour black*/
+    display:flex;                               /*Makes the sidebar a flex container*/
+    justify-content:center;                     /*This centers everything in the flex container horizontaly*/
+    align-items:center;                         /*This center ebverytjhing in the flex container vertically*/                
+    z-index: 1000;                              /*This makes sure that if two things are overlapping, the one with the bigger z-index it goes in front*/
+}
+
+body{
+    margin: 0;                       /*Removes any margins*/
+    background-color: white;       /*Makes the background colour white*/
+}
+
+body.sidebar-page{
+    padding-left: 180px;             /*Adds 180 pixels of padding to the left of the element*/
+}
+
+body.about-page{
+    margin-left: auto;               /*These 2 make the element symetrical*/
+    margin-right:auto;               
+    max-width: 800px;                /*Make it so the element cant go wider than 800 pixels*/
+}
+
+.footer{
+    background-color: black;       /*Makes the background colour black*/
+    text-align: center;              /*Centers the text to the center of the page*/
+    padding: 15px;                   /*Adds 15 pixels of padding around it*/
+}
+
+
+.normal-img{
+    max-width: 50%;                  /*Makes is so the element cant go wider than 50%*/
+    display:block;                   /*Makes the image take up the full width and starts on a new lie*/
+    margin: 20px auto;               /*Adds 20 pixels of a margin top and bottom, while automatically centering the image horizontally*/
+    transform: rotate(90deg);        /*Rotates the image by 90 degrees*/
+}
+
+
+.Vault{
+    font-size: 20px;                 /*Makes the font size to 20 pixels large*/
+}
+
+.logo{
+    height: 67px;                                            /*Makes the height of the image 67 pixels tall*/
+    width: auto;                                             /**/
+    position: absolute;                                      /*Positions the element relative to the nearest element*/
+    top:10px;                                                /**/
+    right:10px;                                              /**/
+}
+
+.logo:hover{
+    transform: scale(1.1);           /*When the mouse hovers of the image the it gets bigger*/
+}
+
+.about-us{
+    height: 67px;                                            /*Makes the height of the image 67 pixels tall*/
+    width: auto;                                             /*makes the button width change due to the header its in*/
+    position: absolute;                                      /*Positions the element relative to the nearest element*/
+    top:10px;                                                /*Maks it so there is a 10 pixel gap between the top of the page and the button */
+    right:100px;                                             /*Makse it so there is a 100 pixel gap between the right side  of the page and the button */ 
+}
+
+.about-us:hover{
+    transform: scale(1.1);          /*When the about us button is hovered over it will get bigger by a scale of 1.1*/
+}
+
+.rules{
+    text-align: center;              /*Aligns the text to the center*/
+}
+
+strong{
+    font-size: 50px;                 /*Makes the font size 50 pixels*/
+    color: orange;                 /*Changes the colour orange*/
+}
+
+img{
+    width: 50%;                      /*Makes the width 50% of the page*/
+    display: block;                  /*Makes the image take up the full width and starts on a new line*/
+    margin-left: auto;               /*These 2 make the element symetrical*/
+    margin-right: auto;              
+    
+}
+
+.about-title{
+    position: absolute;                 /*Positions the element relative to the nearest element*/
+    left: 50%;                          /*Makes sure there is a 50% gap between the element and the left side of the page*/
+    transform: translate(-50%);         /*Moves the element left by 50% of its own width*/
+    width:max-content;                  /*Makes the element as wide as the content inside it*/
+    margin: 0;                          /*Removes all margins*/
+    text-align: center;                 /*Aligns the text to the center of the page*/
+}
+
+.about-header{
+    display: flex;                      /*Makes the header a flex containe*/
+    justify-content:space-between;      /*All elements inside it will be put evenly along it*/
+}
+
+
+.logo-container{
+    position: absolute;                 /*Positions the element relative to the nearest element*/
+    top:10px;                           /*Make sure there is a 10 pixel gap between the img and the top of the page*/
+    right:10px;                         /*Make sure there is a 10 pixel gap between the img and the right side of the page*/
+    width: 67%;                         /*Makes the width 67%*/
+    height: 67%;                        /*Makes the height 67%*/
+    overflow: hidden;                   /*hides anything that peaks outside the container*/
+}
+
+
+
+
+
+
+
+
+
+
+
